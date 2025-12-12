@@ -142,3 +142,55 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #ddd;
+  background: linear-gradient(180deg, rgba(26,35,126,0.03), rgba(26,35,126,0.0));
+  border-radius: 4px;
+}
+
+.participants-title {
+  margin-bottom: 10px;
+  color: #1a237e;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+}
+
+.participants-list {
+  list-style: disc inside;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 480px) {
+  .participants-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.participants-empty {
+  color: #666;
+  font-style: italic;
+}
+
+.participant-pill {
+  display: inline-block;
+  background-color: #eef2ff;
+  color: #1a237e;
+  border: 1px solid #c5cae9;
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.participant-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
