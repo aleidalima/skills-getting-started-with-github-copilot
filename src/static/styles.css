@@ -160,7 +160,7 @@ footer {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr;
   gap: 6px;
@@ -188,6 +188,19 @@ footer {
   border-radius: 999px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.06);
   transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.delete-participant {
+  margin-left: 0.4rem;
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.delete-participant:hover {
+  color: #dc2626;
 }
 
 .participant-pill:hover {
